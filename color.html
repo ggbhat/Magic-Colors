@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE >
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+   <link rel="stylesheet" type="text/css" href="css/puzle.css">
+   <link rel="stylesheet" href="css/headers.css">
+   <link rel="stylesheet" href="css/drawer.css">
+   <link rel="stylesheet" href="css/action_icons.css">
+   <script src="js/jquery-1.9.1.js"></script>
+   <script src="js/jquery-ui.js"></script>
+   <script src="js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body role="application">
+   <section data-type="sidebar">
+      <nav>
+         <ul>
+            <li><a href="demo.html">Try a game</a></li>
+            <li><a href="number.html">Magic Numbers</a></li>
+            <li><a href="color.html">Magic Colors</a></li>
+            <li><a href="about.html">How To Play</a></li>
+         </ul>
+      </nav>
+   </section>
+   <section id="drawer" role="region">
+      <header>
+         <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+         <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+         <menu type="toolbar">
+            <a href="#" onclick="location.reload();"><span class="action-icon email-sync"></span></a>
+            </button>
+         </menu>
+         <h1>Magic Color</h1>
+      </header>
+      <div role="main">
+         <div id="outer">
+            <div id="tab1">
+               <table id="a">
+                  <!-- <tr><td class="i">16</td><td class="k">2</td><td class="c">3</td><td class="d">9</td></tr>
+                     <tr><td class="e">5</td><td class="f">6</td><td class="g">7</td><td class="p">13</td></tr>
+                     <tr><td class="a">4</td><td class="m">10</td><td class="b">11</td><td class="l">12</td></tr>
+                     <tr><td class="j">8</td><td class="n">14</td><td class="o">1</td><td class="h"></td></tr>-->
+                  <tr>
+                     <td class="normal" id="cell00"></td>
+                     <td class="normal" id="cell01"></td>
+                     <td class="normal" id="cell02"></td>
+                     <td class="red" id="cell03"></td>
+                  </tr>
+                  <tr>
+                     <td class="normal" id="cell10"></td>
+                     <td class="normal" id="cell11"></td>
+                     <td class="normal" id="cell12"></td>
+                     <td class="red" id="cell13"></td>
+                  </tr>
+                  <tr>
+                     <td class="normal" id="cell20"></td>
+                     <td class="normal" id="cell21"></td>
+                     <td class="normal" id="cell22"></td>
+                     <td class="red" id="cell23"></td>
+                  </tr>
+                  <tr>
+                     <td class="normal" id="cell30"></td>
+                     <td class="normal" id="cell31"></td>
+                     <td class="normal" id="cell32"></td>
+                     <td class="red" id="cell33"></td>
+                  </tr>
+               </table>
+            </div>
+            <div id="tab2">
+               <p id="goal">Target</p>
+               <table id="c">
+                  <tr>
+                     <td class="a">1</td>
+                     <td class="b">2</td>
+                     <td class="c">3</td>
+                     <td class="d">4</td>
+                  </tr>
+                  <tr>
+                     <td class="e">5</td>
+                     <td class="f">6</td>
+                     <td class="g">7</td>
+                     <td class="o">8</td>
+                  </tr>
+                  <tr>
+                     <td class="i">9</td>
+                     <td class="j">10</td>
+                     <td class="k">11</td>
+                     <td class="l">12</td>
+                  </tr>
+                  <tr>
+                     <td class="m">13</td>
+                     <td class="n">14</td>
+                     <td class="h"></td>
+                     <td class="p">16</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="overlay" id="overlay" style="display:none;">
+               <div class="box" id="box">
+                  <h2>You did it!</h2>
+                  <button onclick="location.reload();">Play Again</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+<script src="js/puzle.js"></script>
+</html>
+
+

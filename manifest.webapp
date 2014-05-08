@@ -1,0 +1,20 @@
+{
+  "name": "Magic Colors ",
+  "description":"It is a simple puzle game",
+  "version": "1.1",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "gbindia",
+    "url": "http://gbindia.in/"
+    
+  },
+   
+  
+
+"default_locale": "en-US",
+  "icons": {
+    "128": "icons/colors-128.png",
+    "60": "icons/colors-60.png"
+  },
+  "orientation": "portrait"
+}
